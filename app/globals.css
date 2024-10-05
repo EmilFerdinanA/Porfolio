@@ -10,3 +10,9 @@
     --accent: 254 254 91;
   }
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
