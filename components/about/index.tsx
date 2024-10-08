@@ -52,6 +52,51 @@ const AboutDetails = () => {
             <sub className="font-semibold text-base">Years of experience</sub>
           </p>
         </ItemLayout>
+
+        <ItemLayout className="col-span-4 !p-0">
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=EmilFerdinanA&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&show_icons=true"
+            alt="EmilFerdinanA"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className="col-span-8 !p-0">
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api?username=EmilFerdinanA&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&show_icons=true"
+            alt="EmilFerdinanA"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className="col-span-full">
+          <img
+            className="w-full h-auto"
+            src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nextjs,tailwind,nodejs,express,mongodb,mysql,postgresql,prisma,git,github,figma,vscode,figma,xd,ai,ps,ae,aftereffects,illustrator,photoshop"
+            alt="EmilFerdinanA"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className="col-span-6 !p-0">
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-streak-stats.herokuapp.com?user=EmilFerdinanA&theme=dark&hide_border=true&type=png&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
+            alt="EmilFerdinanA"
+            loading="lazy"
+          />
+        </ItemLayout>
+
+        <ItemLayout className="col-span-6 !p-0">
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-stats.vercel.app/api/pin/?username=EmilFerdinanA&repo=oasis&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&show_icons=true&description_lines_count=2"
+            alt="EmilFerdinanA"
+            loading="lazy"
+          />
+        </ItemLayout>
       </div>
     </section>
   );
