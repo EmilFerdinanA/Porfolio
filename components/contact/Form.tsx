@@ -3,12 +3,29 @@ import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "sonner";
+import { motion } from "framer-motion";
 
 interface FormData {
   name: string;
   email: string;
   message: string;
 }
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
 
 const Form = () => {
   const {
@@ -65,11 +82,15 @@ const Form = () => {
   return (
     <>
       <Toaster richColors={true} />
-      <form
+      <motion.form
+        variants={container}
+        initial="hidden"
+        animate="show"
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-md w-full flex flex-col items-center justify-center space-y-4"
       >
-        <input
+        <motion.input
+          variants={item}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
           type="text"
           placeholder="name"
@@ -86,7 +107,8 @@ const Form = () => {
             {errors.name.message}
           </span>
         )}
-        <input
+        <motion.input
+          variants={item}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
           type="email"
           placeholder="email"
@@ -97,7 +119,8 @@ const Form = () => {
             {errors.email.message}
           </span>
         )}
-        <textarea
+        <motion.textarea
+          variants={item}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
           placeholder="message"
           {...register("message", {
@@ -117,13 +140,14 @@ const Form = () => {
             {errors.message.message}
           </span>
         )}
-        <input
+        <motion.input
+          variants={item}
           value="Cast your message!"
           className="w-full xs:w-60 px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm 
         backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize"
           type="submit"
         />
-      </form>
+      </motion.form>
     </>
   );
 };
