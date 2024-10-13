@@ -27,7 +27,7 @@ export default function Wizard(props: JSX.IntrinsicElements["group"]) {
 
   const modelRef = useRef<THREE.Group>();
 
-  useFrame((state, delta, xrFrame) => {
+  useFrame((state) => {
     if (modelRef.current) {
       modelRef.current.position.y =
         -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;

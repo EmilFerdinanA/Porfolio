@@ -27,7 +27,7 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
 
   const modelRef = useRef<THREE.Group>();
 
-  useFrame((state, delta, xrFrame) => {
+  useFrame(() => {
     if (modelRef.current) {
       modelRef.current.rotation.y += 0.007;
     }

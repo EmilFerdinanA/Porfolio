@@ -31,7 +31,7 @@ const Modal = ({
         </div>
       </div>
     </div>,
-    document.getElementById("my-modal")
+    document.getElementById("my-modal") as HTMLElement
   );
 };
 
@@ -71,6 +71,7 @@ const Sound = () => {
     } else {
       setShowModal(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggleSound = () => {
