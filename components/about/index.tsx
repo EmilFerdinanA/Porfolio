@@ -20,14 +20,15 @@ const AboutDetails = () => {
 
         <ItemLayout className="col-span-full xs:col-span-6 lg:col-span-4 text-accent">
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            25+ <sub className="font-semibold text-base">Clients</sub>
+            4+{" "}
+            <sub className="font-semibold text-base">Team Collaborations</sub>
           </p>
         </ItemLayout>
 
         <ItemLayout className="col-span-full xs:col-span-6 lg:col-span-4 text-accent">
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            4+{" "}
-            <sub className="font-semibold text-base">Years of experience</sub>
+            9+{" "}
+            <sub className="font-semibold text-base">Months of experience</sub>
           </p>
         </ItemLayout>
 
@@ -52,7 +53,7 @@ const AboutDetails = () => {
         <ItemLayout className="col-span-full">
           <img
             className="w-full h-auto"
-            src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nextjs,tailwind,nodejs,express,mongodb,mysql,postgresql,prisma,git,github,figma,vscode,figma,xd,ai,ps,ae,aftereffects,illustrator,photoshop"
+            src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,nextjs,vue,angular,redux,tailwind,vscode,postgresql,git,github,vite,supabase,postman,linux,java"
             alt="EmilFerdinanA"
             loading="lazy"
           />
