@@ -7,18 +7,14 @@ const AboutDetails = () => {
       <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
         <ItemLayout className="col-span-full lg:col-span-8 row-span-2 flex-col items-start">
           <h2 className="text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+            Craftsman of Digital Experiences
           </h2>
           <p className="font-light text-xs sm:text-sm md:text-base">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
+            I am a frontend web developer. My focus is on creating responsive
+            and captivating interfaces. I am passionate and dedicated to
+            continuously learning and developing my skills. I&apos;m excited to
+            take on new challenges in the ever-evolving world of web
+            development. I&apos;m ready for more exciting projects!
           </p>
         </ItemLayout>
 
