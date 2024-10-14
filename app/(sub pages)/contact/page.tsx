@@ -7,10 +7,9 @@ export default function Home() {
     <>
       <Image
         priority
-        sizes="100vw"
         src={bg}
         alt="Background Image"
-        className="w-full h-full top-0 left-0 object-cover object-center opacity-25 -z-50 fixed"
+        className="min-h-screen min-w-screen top-0 left-0 object-cover object-center opacity-25 -z-50 fixed"
       />
 
       <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
