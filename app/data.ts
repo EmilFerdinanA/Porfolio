@@ -111,13 +111,13 @@ export const BtnList: IBtnList[] = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://www.github.com/EmilFerdinanA",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/emil-ferdinan-akbar-8b31321bb",
     icon: "linkedin",
     newTab: true,
   },
@@ -129,7 +129,7 @@ export const BtnList: IBtnList[] = [
   },
   {
     label: "Resume",
-    link: "/resume.pdf",
+    link: "https://drive.google.com/file/d/1xj5r3ZBXmkm7q2RxCYGTurrgb4Ytlf18/view?usp=sharing",
     icon: "resume",
     newTab: true,
   },
