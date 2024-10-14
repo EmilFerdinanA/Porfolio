@@ -16,7 +16,7 @@ export default function Home() {
         priority
         src={bg}
         alt="Background Image"
-        className="min-h-screen min-w-screen top-0 left-0 object-cover object-center opacity-25 -z-50 fixed"
+        className="min-h-screen min-w-screen w-full h-full top-0 left-0 object-cover object-center opacity-25 -z-50 fixed"
       />
 
       <ProjectList projects={projectsData} />

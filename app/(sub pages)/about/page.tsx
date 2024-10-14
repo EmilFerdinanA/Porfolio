@@ -15,7 +15,7 @@ export default function Home() {
         src={bg}
         priority
         alt="Next.js Portfolio website's about page background image"
-        className="-z-50 fixed top-0 left-0 min-h-screen min-w-screen object-cover object-center opacity-50"
+        className="-z-50 fixed top-0 left-0 min-h-screen min-w-screen w-full h-full object-cover object-center opacity-50"
       />
 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
