@@ -13,7 +13,7 @@ const HomeBtn = () => {
       animate={{ scale: 1 }}
       transition={{ delay: 1 }}
       id={"home"}
-      className="text-foreground rounded-full flex items-center justify-center custom-bg fixed top-4 left-2.5 xs:left-4 w-fit self-start z-50"
+      className="text-foreground rounded-full flex items-center justify-center custom-bg fixed top-4 left-2 xs:left-4 w-fit self-start z-50"
       aria-label={"home"}
       href={"/"}
       target={"_self"}
