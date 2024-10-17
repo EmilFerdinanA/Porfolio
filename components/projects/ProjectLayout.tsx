@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const item = {
   hidden: { opacity: 0, y: 100 },
@@ -12,26 +13,30 @@ const NavLink = motion.create(Link);
 const ProjectLayout: React.FC<{
   name: string;
   description: string;
-  date: string;
+  image: string;
   demoLink: string;
-}> = ({ name, description, date, demoLink }) => {
+}> = ({ name, description, image, demoLink }) => {
   return (
     <NavLink
       variants={item}
       href={demoLink}
       target={"_blank"}
-      className="text-sm md:text-base flex items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
+      className="text-sm md:text-base flex flex-col gap-4 items-center justify-center w-full md:w-[80%] relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
     >
-      <div className="flex items-center justify-center space-x-2">
-        <h2 className="text-foreground">{name}</h2>
-        <p className="text-muted hidden sm:inline-block">{description}</p>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-accent text-2xl md:text-3xl font-bold">{name}</h2>
+        <Image
+          className="rounded-lg object-cover"
+          src={image}
+          alt={name}
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+        <p className="text-foreground text-sm sm:text-base text-justify">
+          {description}
+        </p>
       </div>
-
-      <div className="self-end flex-1 mx-2 mb-1 bg-transparent border-b border-dashed border-muted"></div>
-
-      <p className="text-muted sm:text-foreground">
-        {new Date(date).toDateString()}
-      </p>
     </NavLink>
   );
 };
