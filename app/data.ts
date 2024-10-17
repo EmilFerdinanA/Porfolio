@@ -75,7 +75,7 @@ export const BtnList: IBtnList[] = [
   },
   {
     label: "Resume",
-    link: "https://drive.google.com/file/d/1xj5r3ZBXmkm7q2RxCYGTurrgb4Ytlf18/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1_PudiUFvLS2OW0NGWjuEYQZ66zDQlP8U/view?usp=sharing",
     icon: "resume",
     newTab: true,
   },
